@@ -1,0 +1,45 @@
+<script>
+
+
+function print(message) { document.getElementById("area").innerHTML = message.toString(); }
+
+function onClick()
+{
+    var number = document.getElementById('number').value;
+
+    document.getElementById("img").style.display = 'inline-block';
+
+    frappe.call({
+               type: "POST",
+               method: "shipment_management.provider_fedex.get_html_code_status_with_fedex_tracking_number",
+               args: {
+                   track_value: number
+                    },
+               callback: function (message) {
+                   document.getElementById("img").style.display = 'none';
+                   document.getElementById("area").innerHTML = message.message;
+                    }
+                })
+}
+</script>
+
+<style>
+    .hide{
+        display: none;
+    }
+</style>
+<div class="container">
+<h2>Welcome to Fedex Status Checking Page!</h2>
+<h3>Enter a combination of up to 30 FedEx tracking numbers:</h3>
+
+<input style="width: 70%;" type="text" name="number" id="number" placeholder="Please enter tracking number..."/>
+<br>
+<br>
+<button class="btn btn-primary btn-sm" type="button" id="submit"  onclick="onClick()">{{ _("Verify Status") }}</button>
+<img src="/assets/shipment_management/images/loader_1.gif" id="img" style="display: none">
+
+<h4 id="area"></h4>
+
+</div>
+
+

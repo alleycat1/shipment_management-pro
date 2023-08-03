@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../erpnextgit/.idea/erpnextgit.iml" filepath="$PROJECT_DIR$/../erpnextgit/.idea/erpnextgit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fedex/.idea/fedex.iml" filepath="$PROJECT_DIR$/../fedex/.idea/fedex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../jhaudio_warranty_management/.idea/jhaudio_warranty_management.iml" filepath="$PROJECT_DIR$/../jhaudio_warranty_management/.idea/jhaudio_warranty_management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/shipment_management_pass2.iml" filepath="$PROJECT_DIR$/.idea/shipment_management_pass2.iml" />
+    </modules>
+  </component>
+</project>

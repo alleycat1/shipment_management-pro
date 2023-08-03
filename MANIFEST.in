@@ -1,0 +1,19 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include shipment_management *.css
+recursive-include shipment_management *.csv
+recursive-include shipment_management *.html
+recursive-include shipment_management *.ico
+recursive-include shipment_management *.js
+recursive-include shipment_management *.json
+recursive-include shipment_management *.md
+recursive-include shipment_management *.png
+recursive-include shipment_management *.py
+recursive-include shipment_management *.svg
+recursive-include shipment_management *.txt
+recursive-exclude shipment_management *.pyc
+recursive-exclude shipment_management *.idea
